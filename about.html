@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>О нас</title>
+<style>
+	h1 {text-align: center; color: 	#000080; font-weight:bold; font-family: Calibri}
+	body.Blue {
+	background-color: #EFF8FB;
+}
+</style>
+<link rel="stylesheet" href="lab4.css" />
+<script>
+	function ButtonHighlight(ButtonID){
+		ButtonID.style.textDecoration = "underline";
+		ButtonID.style.backgroundColor = "#77c4ff"
+	}
+	function ButtonUnhighlight(ButtonID){
+		ButtonID.style.textDecoration = "none";
+		if (ButtonID.className == "buttonSelected"){
+			ButtonID.style.backgroundColor = "#123F83";
+		}
+		else {
+			ButtonID.style.backgroundColor = "#1285DE";
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Детский сад "Звезда"</h1>
+<blockquote>
+	<p align="center">Все лучшее - детям</p>
+</blockquote>
+<div class="menu">
+ <nav>
+	<a href="main.html"><button id="BtnMain" onmouseover="ButtonHighlight(BtnMain)" onmouseout="ButtonUnhighlight(BtnMain)" type="button" class="button">Главная</button></a>
+	<a href="about.html"><button  id="BtnAbout" onmouseover="ButtonHighlight(BtnAbout)" onmouseout="ButtonUnhighlight(BtnAbout)" type="button" class="buttonSelected">О нас</button></a>
+	<a href="staff.html"><button  id="BtnStaff" onmouseover="ButtonHighlight(BtnStaff)" onmouseout="ButtonUnhighlight(BtnStaff)" type="button" class="button">Наш персонал</button></a>
+	<a href="kids.html"><button  id="BtnKids" onmouseover="ButtonHighlight(BtnKids)" onmouseout="ButtonUnhighlight(BtnKids)" type="button" class="button">Список детей</button></a>
+	<a href="contacts.html"><button  id="BtnContacts" onmouseover="ButtonHighlight(BtnContacts)" onmouseout="ButtonUnhighlight(BtnContacts)" type="button" class="button">Контакты</button></a>
+ </nav>
+</div>
+<hr>
+<h1>О нас</h1>
+<div class="textField">
+<p>Год постройки здания детского сада — 1960.
+Здание детского сада — двухэтажный кирпичный корпус с 2 основными входами и 2 запасных выходами. 
+ <img class="FloatRight" src="img/ds1.jpg" width="300" height="160" alt="Изображение не найдено"></p>
+<p>Территория детского сада — ~0,5 га, озеленение — ~50% территории. Территория разделена на функциональные зоны:
+прогулочные площадки для всех возрастных групп с теневыми верандами;
+спортивную зону, состоящую из двух площадок;
+хозяйственную зону</p>
+<p>Режим работы — 5 дней в неделю с понедельника по пятницу, с 7:00 до 19:00.</p>
+<p>Питание — 4-х разовое, в соответствие с «Типовым рационом питания для детей от 1,5 до 3-х лет и от 3-х до 7 лет в 
+государственных образовательных учреждениях, реализующих общеобразовательные программы дошкольного образования с 12-часовым пребыванием детей».</p>
+<p>Проектная наполняемость детского сада — 75 детей.</p>
+<p>Количество групп — 4, из них 3 группы одновозрастные и одна группа разновозрастная:</p>
+<ul>
+<li>ясельная (от 1,5 до 3 лет) — 15 детей;</li>
+<li>младшая (от 3 до 4 лет) — 20 детей;</li>
+<li>средняя (от 4 до 5 лет) — 20 детей;</li>
+<li>старше-подготовительная (от 5 до 7 лет) — 20 детей.</li>
+</ul>
+<p>Фактическая наполняемость детского сада в 2013/2014 учебном году — 88 детей.</p>
+</div>
+</body>
+</html>

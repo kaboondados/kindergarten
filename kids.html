@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Список детей</title>
+<style>
+	h1 {text-align: center; color: 	#000080; font-weight:bold; font-family: Calibri}
+	body.Blue {
+	background-color: #EFF8FB;
+}
+</style>
+<link rel="stylesheet" href="lab4.css" />
+<script>
+	function ButtonHighlight(ButtonID){
+		ButtonID.style.textDecoration = "underline";
+		ButtonID.style.backgroundColor = "#77c4ff"
+	}
+	function ButtonUnhighlight(ButtonID){
+		ButtonID.style.textDecoration = "none";
+		if (ButtonID.className == "buttonSelected"){
+			ButtonID.style.backgroundColor = "#123F83";
+		}
+		else {
+			ButtonID.style.backgroundColor = "#1285DE";
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Детский сад "Звезда"</h1>
+<blockquote>
+	<p align="center">Все лучшее - детям</p>
+</blockquote>
+<div class="menu">
+ <nav>
+	<a href="main.html"><button id="BtnMain" onmouseover="ButtonHighlight(BtnMain)" onmouseout="ButtonUnhighlight(BtnMain)" type="button" class="button">Главная</button></a>
+	<a href="about.html"><button  id="BtnAbout" onmouseover="ButtonHighlight(BtnAbout)" onmouseout="ButtonUnhighlight(BtnAbout)" type="button" class="button">О нас</button></a>
+	<a href="staff.html"><button  id="BtnStaff" onmouseover="ButtonHighlight(BtnStaff)" onmouseout="ButtonUnhighlight(BtnStaff)" type="button" class="button">Наш персонал</button></a>
+	<a href="kids.html"><button  id="BtnKids" onmouseover="ButtonHighlight(BtnKids)" onmouseout="ButtonUnhighlight(BtnKids)" type="button" class="buttonSelected">Список детей</button></a>
+	<a href="contacts.html"><button  id="BtnContacts" onmouseover="ButtonHighlight(BtnContacts)" onmouseout="ButtonUnhighlight(BtnContacts)" type="button" class="button">Контакты</button></a>
+ </nav>
+</div>
+<hr>
+<h1>Список детей</h1>
+<table class="myTable" style="width: 800px">
+	<tr>
+	<th class="blue">ФИО</th> <th class="blue">Адрес</th> <th class="blue">Родители</th> <th class="blue">Фото</th>
+	</tr>
+	<tr>
+	<td class="tdCenter" colspan="4">Группа 1</td>
+	</tr> 
+	<tr>
+	<td>Есипова Тамара Романовна</td> <td>3-я ул. Строителей, 10</td><td>Есипова Светлана Геннадиевна, Есипов Роман Алексеевич</td><td><img src="img/kid6.png" alt="Изображение не найдено"></td>
+	</tr>
+	<tr>
+	<td>Зайцев Иннокентий Викторович</td> <td>Тверская ул., 54</td><td>Зайцева Ольга Игоревна, Зайцев Роман Игоревич</td><td><img src="img/kid2.png" alt="Изображение не найдено"></td>
+	</tr>
+	<tr>
+	<td>Караулин Сергей Сергеевич</td> <td>Сиреневый б-р, 34</td><td>Караулина Инна Ивановна, Караулин Сергей Юрьевич</td><td><img src="img/kid3.png" alt="Изображение не найдено"></td>
+	</tr>
+	<tr>
+	<td class="tdCenter" colspan="4">Группа 2</td>
+	</tr> 
+	<tr>
+	<td>Большов Анатолий Дмитриевич</td> <td>ул. Хабаровская, 70</td><td>Виноградова Кира Михайловна, Большов Дмитрий Маратович</td><td><img src="img/kid1.png" alt="Изображение не найдено"></td>
+	</tr>
+	<tr>
+	<td>Жолдин Юрий Олегович</td> <td>ул. Большая Почтовая, 47</td><td>Жолдина Татьяна Борисовна, Долдин Олег Иванович</td><td><img src="img/kid4.png" alt="Изображение не найдено"></td>
+	</tr>
+	<tr>
+	<td>Капралов Олег Станиславович</td> <td>Рубцовская наб., 1</td><td>Капралова Римма Ивановна, Капралов Станислав Евгеньевич</td><td><img src="img/kid5.png" alt="Изображение не найдено"></td>
+	</tr>	
+</table>
+<hr> 
+</body>
+</html>

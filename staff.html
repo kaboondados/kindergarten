@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Наш персонал</title>
+<style>
+	h1 {text-align: center; color: 	#000080; font-weight:bold; font-family: Calibri}
+	body.Blue {
+	background-color: #EFF8FB;
+}
+</style>
+<link rel="stylesheet" href="lab4.css" />
+<script>
+	function ButtonHighlight(ButtonID){
+		ButtonID.style.textDecoration = "underline";
+		ButtonID.style.backgroundColor = "#77c4ff"
+	}
+	function ButtonUnhighlight(ButtonID){
+		ButtonID.style.textDecoration = "none";
+		if (ButtonID.className == "buttonSelected"){
+			ButtonID.style.backgroundColor = "#123F83";
+		}
+		else {
+			ButtonID.style.backgroundColor = "#1285DE";
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Детский сад "Звезда"</h1>
+<blockquote>
+	<p align="center">Все лучшее - детям</p>
+</blockquote>
+<div class="menu">
+ <nav>
+	<a href="main.html"><button id="BtnMain" onmouseover="ButtonHighlight(BtnMain)" onmouseout="ButtonUnhighlight(BtnMain)" type="button" class="button">Главная</button></a>
+	<a href="about.html"><button  id="BtnAbout" onmouseover="ButtonHighlight(BtnAbout)" onmouseout="ButtonUnhighlight(BtnAbout)" type="button" class="button">О нас</button></a>
+	<a href="staff.html"><button  id="BtnStaff" onmouseover="ButtonHighlight(BtnStaff)" onmouseout="ButtonUnhighlight(BtnStaff)" type="button" class="buttonSelected">Наш персонал</button></a>
+	<a href="kids.html"><button  id="BtnKids" onmouseover="ButtonHighlight(BtnKids)" onmouseout="ButtonUnhighlight(BtnKids)" type="button" class="button">Список детей</button></a>
+	<a href="contacts.html"><button  id="BtnContacts" onmouseover="ButtonHighlight(BtnContacts)" onmouseout="ButtonUnhighlight(BtnContacts)" type="button" class="button">Контакты</button></a>
+ </nav>
+</div>
+<hr>
+<h1>Наш персонал</h1>
+<table class="myTable" style="width: 500px">
+	<tr>
+	<th class="blue">ФИО</th> <th class="blue">Должность</th>
+	</tr>
+	<tr>
+	<td>Иванова Мария Ивановна</td> <td>Воспитатель</td>
+	</tr>
+	<tr>
+	<td>Петрова Инна Дмитриевна</td> <td>Воспитатель</td>
+	</tr>
+	<tr>
+	<td>Наумов Василий Святославович</td> <td>Сантехник</td>
+	</tr>
+</table>
+</body>
+</html>

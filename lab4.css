@@ -1,0 +1,105 @@
+p{
+	font-family: Calibri
+}
+body {
+	background-image: url("background.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.myTable{
+	border-collapse: separate;
+    border-spacing: 0;
+	margin-left:auto; 
+    margin-right:auto;
+	font-family: Calibri;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	border: 1px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px;
+	background-color: white;
+	table-layout: fixed;
+	text-align: center;
+}
+.blue{
+	background-color: #58D3F7;
+	font-size: large;
+	text-align: center;
+	font-weight: bold;
+}
+.myTable th, td {
+    border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.tdCenter{
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+.menu {
+	margin:auto;
+	width:758px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+	background-color: #58D3F7;
+	padding: 10px;
+}
+.textField{
+	margin:auto;
+	width:758px;
+	font-family: Calibri;
+	text-align: left;
+	font-size: large;
+	background-color: white;
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 10px;
+}
+.textFieldMid{
+	margin:auto;
+	width:758px;
+	font-family: Calibri;
+	text-align: center;
+	font-size: x-large;
+	background-color: white;
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+	padding: 10px;
+}
+.FloatRight {
+	float: right;
+	margin: 20px
+}
+.button {
+    background-color: #1285DE;
+	border: 2px solid grey;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonSelected {
+    background-color: #123F83;
+	border: 2px solid grey;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
